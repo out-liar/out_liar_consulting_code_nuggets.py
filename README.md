@@ -21,6 +21,26 @@ Prioritised on the basis of how useful the code is for data analysis.
  / ==ooooooooooooooo==.o.  ooo= //   ,`\--{)B     ,"
 /_==__==========__==_ooo__ooo=_/'   /___________,"
 `-----------------------------'
+
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: Calculate median for a list of numbers.
+# Use: Data analysis.
+
+def median(lst):
+    sorted_list = sorted(lst)
+    if len(sorted_list) % 2 != 0:
+        #odd number of elements
+        index = len(sorted_list)//2 
+        return sorted_list[index]
+    elif len(sorted_list) % 2 == 0:
+        #even no. of elements
+        index_1 = len(sorted_list)/2 - 1
+        index_2 = len(sorted_list)/2
+        mean = (sorted_list[index_1] + sorted_list[index_2])/2.0
+        return mean
+   
+print median([2, 4, 5, 9])
+
 --------------------------------------------------------------------------------------------------------------------------------
 # Purpose: Test to identify a number as prime.
 # Use: Security.
@@ -170,12 +190,66 @@ print is_even(900)
 
 
 --------------------------------------------------------------------------------------------------------------------------------
+# Purpose: Calculates the product of numbers in a list.
+# Use:
+
+def product(list):
+  total = 1
+  for num in list:
+    total = total * num
+  return total
+
+print product([4, 5, 5])
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: Function that removes duplicates in a list.
+# Use: Data processing.
+
+def remove_duplicates(inputlist):
+    if inputlist == []:
+        return []
+    
+    # Sort the input list from low to high    
+    inputlist = sorted(inputlist)
+    # Initialize the output list, and give it the first value of the now-sorted input list
+    outputlist = [inputlist[0]]
+
+    # Go through the values of the sorted list and append to the output list
+    # ...any values that are greater than the last value of the output list
+    for i in inputlist:
+        if i > outputlist[-1]:
+            outputlist.append(i)
+        
+    return outputlist
+  
+print remove_duplicates([1, 1, 2, 2])
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: 
+# Use:
+
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: 
+# Use:
+
+
+--------------------------------------------------------------------------------------------------------------------------------
 # Purpose: 
 # Use:
 
 
 
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: 
+# Use:
 
+
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: 
+# Use:
 
 
 
@@ -186,6 +260,10 @@ print is_even(900)
 
 
 
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: 
+# Use:
+
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -194,5 +272,7 @@ print is_even(900)
 
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: 
+# Use:
 
