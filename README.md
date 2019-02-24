@@ -126,30 +126,47 @@ print reverse("At any given moment, public opinion is a chaos of superstition, m
 
 
 --------------------------------------------------------------------------------------------------------------------------------
-# Purpose: 
+# Purpose: Sum digits of a number.
 # Use:
 
+def digit_sum(x):
+    total = 0
+    while x > 0:
+        total += x % 10
+        x = x // 10
+        print x
+    return total
+print digit_sum(433)
 
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: Function that takes a number and checks if it is an integer.
+# Use: Data processing.
 
-
+def is_int(x):
+    absoluteCount = abs(x)
+    typeCount =type(x)
+    roundCount = round(absoluteCount)
+    if typeCount and absoluteCount - roundCount == 0:
+        return True
+    else:
+        return False
+print is_int(7.0)   # True    
+print is_int(7.5)   # False    
+print is_int(-1)    # True      
 
 
 --------------------------------------------------------------------------------------------------------------------------------
-# Purpose: 
-# Use:
+# Purpose: Checks if an integer is even.
+# Use: Data validation.
 
-
-
-
-
---------------------------------------------------------------------------------------------------------------------------------
-# Purpose: 
-# Use:
-
-
-
-
-
+def is_even(x):
+    if x %2 == 0:
+        return True
+    else:
+        return False
+        
+        
+print is_even(900)
 
 
 --------------------------------------------------------------------------------------------------------------------------------
