@@ -38,6 +38,7 @@ def median(lst):
         index_2 = len(sorted_list)/2
         mean = (sorted_list[index_1] + sorted_list[index_2])/2.0
         return mean
+       
    
 print median([2, 4, 5, 9])
 
@@ -309,3 +310,23 @@ for turn in range(4):
 # Purpose: 
 # Use:
 
+
+
+
+
+
+
+                          _,..,,,_
+                     '``````^~"-,_`"-,_
+       .-~c~-.                    `~:. ^-.
+   `~~~-.c    ;                      `:.  `-,     _.-~~^^~:.
+         `.   ;      _,--~~~~-._       `:.   ~. .~          `.
+          .` ;'   .:`           `:       `:.   `    _.:-,.    `.
+        .' .:   :'    _.-~^~-.    `.       `..'   .:      `.    '
+       :  .' _:'   .-'        `.    :.     .:   .'`.        :    ;
+  jgs  :  `-'   .:'             `.    `^~~^`   .:.  `.      ;    ;
+        `-.__,-~                  ~-.        ,' ':    '.__.`    :'
+                                     ~--..--'     ':.         .:'
+                                                     ':..___.:'
+
+# created for out_liar_consulting
