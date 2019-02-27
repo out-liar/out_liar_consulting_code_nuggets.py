@@ -39,6 +39,28 @@ def median(lst):
 print median([2, 4, 5, 9])
 
 --------------------------------------------------------------------------------------------------------------------------------
+# Purpose: Sum and Average function for a list
+# Use: For use in statistical functions, for example calculating the average of hedge funds scores.
+
+hedge_fund_alpha = [0.1, 0.3, 1, 0.02, 0.001, 0.034, 5, 0.8, 0.25, 0.04, 0.006, 0.2, 0.004]
+
+def alpha_sum(scores):
+  total = 0
+  for score in scores: 
+    total += score
+  return total
+
+print alpha_sum(hedge_fund_alpha)
+
+def alpha_average(alpha_input):
+  sum_of_alpha = alpha_sum(alpha_input)
+  average = sum_of_alpha / float(len(alpha_input))
+  return average
+
+print alpha_average(hedge_fund_alpha)
+
+
+--------------------------------------------------------------------------------------------------------------------------------
 # Purpose: Test to identify a number as prime.
 # Use: Security.
 
@@ -64,7 +86,7 @@ def factorial(x):
         x-=1
     return total
 print factorial(6)
-
+--------------------------------------------------------------------------------------------------------------------------------
 
 # Purpose: Purify a list of numbers.
 # Use: Cleaning data before analysis.
