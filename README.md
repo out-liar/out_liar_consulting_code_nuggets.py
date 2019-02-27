@@ -59,6 +59,31 @@ def alpha_average(alpha_input):
 
 print alpha_average(hedge_fund_alpha)
 
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: Variance function for a list.
+# Use: For use in statistical functions, for example calculating the average of hedge funds scores.
+
+hedge_fund_alpha = [0.1, 0.3, 1, 0.02, 0.001, 0.034, 5, 0.8, 0.25, 0.04, 0.006, 0.2, 0.004]
+
+def alpha_variance(hedge_fund_alpha):
+    variance = 0
+    for number in hedge_fund_alpha:
+        variance += (alpha_average(hedge_fund_alpha) - number) ** 2
+    return variance / len(hedge_fund_alpha)
+
+print alpha_variance(hedge_fund_alpha)
+
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: Standard deviation function for a list.
+# Use: For use in statistical functions, for example calculating the average of hedge funds scores.
+
+def alpha_std_deviation(variance):
+  return variance ** 0.5
+
+variance = alpha_variance(hedge_fund_alpha)
+
+print alpha_std_deviation(variance)
+
 
 --------------------------------------------------------------------------------------------------------------------------------
 # Purpose: Test to identify a number as prime.
