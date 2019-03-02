@@ -352,8 +352,13 @@ for turn in range(4):
 
 
 --------------------------------------------------------------------------------------------------------------------------------
-# Purpose: 
-# Use:
+# Purpose: Anonymous function 
+# Use: Making code more efficient
+
+languages = ["HTML", "JavaScript", "Python", "Ruby"]
+
+
+print filter(lambda x: x == "Python", languages)
 
 
 
