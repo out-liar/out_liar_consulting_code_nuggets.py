@@ -123,6 +123,22 @@ print "Average class grade score is: ", grades_average(grades)
 print "Class grade Variance is: ", grades_variance(grades)
 print "Class Standard Deviation is: ", grades_std_deviation(variance)
 
+
+--------------------------------------------------------------------------------------------------------------------------------
+# Purpose: To open a text file and on the computer and write information into the file.
+# Use: File editing.
+
+my_list = [i ** 2 for i in range(1, 11)]
+# Generates a list of squares of the numbers 1 - 10
+
+f = open("output.txt", "w")
+
+for item in my_list:
+  f.write(str(item) + "\n")
+
+f.close()
+
+
 --------------------------------------------------------------------------------------------------------------------------------
 # Purpose: Test to identify a number as prime.
 # Use: Security.
