@@ -138,6 +138,13 @@ for item in my_list:
 
 f.close()
 
+-------------------------------------------------------------------------------------------------------------------------------
+# Purpose: Shortcut to open a text file and on the computer and write information into the file.
+# Use: File editing.
+
+with open("text.txt", "w") as my_file:
+  my_file.write("The answer is 42.")
+
 
 --------------------------------------------------------------------------------------------------------------------------------
 # Purpose: Test to identify a number as prime.
