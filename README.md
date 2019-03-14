@@ -409,22 +409,41 @@ print my_point
 # Purpose: To calculate BMI.
 # Use:
 
-name = 'Confucius'
-height_m = 189.2
-weight_kg = 89.5
+# BMI CALCULATOR
+# Below are the people for which the BMI will be calculated.
+name1 = 'Confucius'
+height_m1 = 1.895
+weight_kg1 = 89.5
 
-# The formula for calculating BMI is weight divided by height squared.
-bmi = weight_kg / (height_m ** 2)
-print('bmi: ', bmi)
+name2 = 'Sun Tzu'
+height_m2 = 1.90
+weight_kg2 = 100
 
-# Classifying the BMI:
-if bmi < 25:
-    print(name, "is not overweight.")
-else:
-        print(name, "is overweight.")
+name3 = 'Ge Hong'
+height_m3 = 1.896
+weight_kg3 = 90
 
 
+# BMI function
+def bmi_calculator(name, height_m, weight_kg):
+    
+    # The formula for calculating BMI is weight divided by height squared.
+    bmi = weight_kg / (height_m ** 2)
+    print('bmi: ', bmi)
+    if bmi < 25:
+        return name + " is not overweight."
+    else:
+        return name + " is overweight."
 
+
+bmi_result1 = bmi_calculator(name1, height_m1, weight_kg1)
+bmi_result2 = bmi_calculator(name2, height_m2, weight_kg2)
+bmi_result3 = bmi_calculator(name3, height_m3, weight_kg3)
+
+
+print(bmi_result1)
+print(bmi_result2)
+print(bmi_result3)
 
 --------------------------------------------------------------------------------------------------------------------------------
 # Purpose: 
