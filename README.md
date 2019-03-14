@@ -406,8 +406,22 @@ print my_point
 
 
 --------------------------------------------------------------------------------------------------------------------------------
-# Purpose: 
+# Purpose: To calculate BMI.
 # Use:
+
+name = 'Confucius'
+height_m = 189.2
+weight_kg = 89.5
+
+# The formula for calculating BMI is weight divided by height squared.
+bmi = weight_kg / (height_m ** 2)
+print('bmi: ', bmi)
+
+# Classifying the BMI:
+if bmi < 25:
+    print(name, "is not overweight.")
+else:
+        print(name, "is overweight.")
 
 
 
